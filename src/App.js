@@ -11,7 +11,7 @@ import MyNFT from './utils/MyNFT.json';
 const TWITTER_HANDLE = 'shrirajpawar04';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = 'https://testnets.opensea.io/collection/shreenft-v3';
-const TOTAL_MINT_COUNT = 50;
+//const TOTAL_MINT_COUNT = 50;
 
 const CONTRACT_ADDRESS = '0xE2059DE84A79b8388173b2160872315f9714CdE7';
 
@@ -53,6 +53,8 @@ const App = () => {
 
       console.log("Connected", accounts[0]);
       setCurrentAccount(accounts[0]); 
+
+      setupEventListner();
     } catch (error) {
       console.log(error)
     }
@@ -157,16 +159,16 @@ const App = () => {
     </div>
   );
 
-  function Spinner() {
-    return (
-      <div className="lds-ellipsis">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    );
-  }
-};
+//   function Spinner() {
+//     return (
+//       <div className="lds-ellipsis">
+//         <div></div>
+//         <div></div>
+//         <div></div>
+//         <div></div>
+//       </div>
+//     );
+//   }
+ };
 
 export default App;
